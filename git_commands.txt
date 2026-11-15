@@ -1,0 +1,41 @@
+1. mkdir sdp-sga2-git-workflow && cd sdp-sga2-git-workflow
+   Creates the local project directory and navigates into it.
+
+2. git init -b main
+   Initializes a new local Git repository with 'main' as the default branch.
+
+3. git status
+   Displays the state of the working directory and staging area, listing untracked, modified, or staged files.
+
+4. git add <file>
+   Stages specified file changes in the working directory for the next commit.
+
+5. git commit -m "<message>"
+   Records staged snapshots permanently into the local repository history with a descriptive message.
+
+6. git checkout -b feature
+   Creates a new branch named 'feature' and immediately switches the working directory to it.
+
+7. git checkout main
+   Switches the active working branch back to 'main'.
+
+8. git merge --no-ff feature -m "<message>"
+   Merges changes from the 'feature' branch into 'main' while creating an explicit merge commit to preserve branch history.
+
+9. git log --oneline --graph --all --decorate
+   Displays a compact ASCII commit graph across all branches along with commit hashes and branch pointers.
+
+10. git revert HEAD --no-edit
+    Creates a new commit that safely inverses the changes introduced by the latest commit without rewriting commit history.
+
+11. git remote add origin https://github.com/TirthBhalani/sdp-sga2-git-workflow.git
+    Links the local repository to the remote public repository hosted on GitHub under the alias 'origin'.
+
+12. git remote -v
+    Verifies the configured remote fetch and push URLs for the repository.
+
+13. git push -u origin main
+    Uploads all local 'main' branch commits to GitHub and sets 'origin/main' as the upstream tracking branch.
+
+14. git push origin feature
+    Pushes the 'feature' branch reference and its commits to the remote GitHub repository.
